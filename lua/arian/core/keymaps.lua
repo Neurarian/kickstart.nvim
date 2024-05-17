@@ -16,9 +16,9 @@ vim.keymap.set('n', '<leader>+', 'C-a', { desc = 'Increment number' })
 vim.keymap.set('n', '<leader>-', 'C-x', { desc = 'Decrement number' })
 
 -- Window management
-vim.keymap.set('n', '<leader>%v', 'C-w>v', { desc = 'Split Window vertically' })
-vim.keymap.set('n', '<leader>%h', 'C-w>s', { desc = 'Split Window horizontally' })
-vim.keymap.set('n', '<leader>%e', 'C-w>=', { desc = 'Make splits equal size' })
+vim.keymap.set('n', '<leader>%v', '<C-w>v', { desc = 'Split Window vertically' })
+vim.keymap.set('n', '<leader>%h', '<C-w>s', { desc = 'Split Window horizontally' })
+vim.keymap.set('n', '<leader>%e', '<C-w>=', { desc = 'Make splits equal size' })
 vim.keymap.set('n', '<leader>%x', '<cmd>close<CR>', { desc = 'Close current split' })
 
 vim.keymap.set('n', '<leader>to', '<cmd>tabnew<CR>', { desc = 'Open new tab' })

@@ -1,5 +1,6 @@
 return {
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'christoomey/vim-tmux-navigator', -- tmux & split window navigator
 
   { 'numToStr/Comment.nvim', opts = {} },
 
