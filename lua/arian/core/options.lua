@@ -65,3 +65,19 @@ vim.opt.hlsearch = true
 vim.opt.hlsearch = true
 
 vim.opt.background = 'dark'
+
+--- Treesitter folding
+vim.wo.foldmethod = 'manual'
+vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.wo.foldtext = [[substitute(getline(v:foldstart),'\\t',repeat('\ ',&tabstop),'g').'...'.trim(getline(v:foldend)) ]]
+vim.wo.fillchars = 'fold:\\'
+vim.wo.foldnestmax = 3
+vim.wo.foldminlines = 1
+
+vim.g.rustaceanvim = {
+  tools = {
+    hover_actions = {
+      auto_focus = true,
+    },
+  },
+}
