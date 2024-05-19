@@ -19,8 +19,9 @@ return {
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   require 'arian.plugins.colorscheme',
+  require 'arian.plugins.alpha',
   require 'arian.plugins.debug',
-  -- require 'arian.plugins.indent_line',
+  require 'arian.plugins.indent_line',
   -- require 'arian.plugins.lint',
   require 'arian.plugins.rustaceanvim',
   require 'arian.plugins.autopairs',
