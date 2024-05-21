@@ -12,8 +12,8 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('i', 'jk', '<ESC>', { desc = 'Exit insert mode with jk' })
 
 -- Increment numbers
-vim.keymap.set('n', '<leader>+', 'C-a', { desc = 'Increment number' })
-vim.keymap.set('n', '<leader>-', 'C-x', { desc = 'Decrement number' })
+vim.keymap.set('n', '<leader>+', '<C-a>', { desc = 'Increment number' })
+vim.keymap.set('n', '<leader>-', '<C-x>', { desc = 'Decrement number' })
 
 -- Window management
 vim.keymap.set('n', '<leader>%v', '<C-w>v', { desc = 'Split Window vertically' })

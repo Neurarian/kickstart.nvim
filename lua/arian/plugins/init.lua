@@ -7,9 +7,6 @@ return {
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
-  -- bookmarks
-  { 'ThePrimeagen/harpoon', lazy = true },
-
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
@@ -34,7 +31,8 @@ return {
   require 'arian.plugins.which-key',
   require 'arian.plugins.telescope',
   require 'arian.plugins.treesitter',
-  require 'arian.plugins.telescope',
+  require 'arian.plugins.harpoon',
+  require 'arian.plugins.colorizer',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
